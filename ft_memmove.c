@@ -6,7 +6,7 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 17:26:40 by llorgere          #+#    #+#             */
-/*   Updated: 2017/04/14 16:36:57 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 15:20:23 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			n--;
 		}
 	}
-	else 
+	else
 	{
 		while (i < n)
 		{

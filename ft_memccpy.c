@@ -6,7 +6,7 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 17:13:53 by llorgere          #+#    #+#             */
-/*   Updated: 2017/04/12 17:10:16 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 20:42:24 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned char	*tmp;
 	unsigned char	*ump;
 
+	if (!n )
+		return (0);
 	i = 0;
 	tmp = (unsigned char *)dest;
 	ump = (unsigned char *)src;

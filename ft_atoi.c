@@ -6,13 +6,11 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/01 12:28:39 by llorgere          #+#    #+#             */
-/*   Updated: 2017/05/01 13:01:59 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 15:25:12 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 int		ft_atoi(const char *str)
 {
@@ -41,14 +39,3 @@ int		ft_atoi(const char *str)
 		nb = nb * (-1);
 	return (nb);
 }
-/*
-int		main()
-{
-	char	n[40] = "2147483649";
-	char	s[40] = "-2147483649";
-
-//	printf("%d\n", ft_atoi(n));
-//	printf("%d\n", ft_atoi(s));
-	printf("%d\n", atoi(n));
-	printf("%d\n", atoi(s));
-}*/

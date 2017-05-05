@@ -6,18 +6,20 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/01 15:17:40 by llorgere          #+#    #+#             */
-/*   Updated: 2017/05/01 15:29:19 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 19:54:20 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_number(const char *str, char c)
+static int		ft_number(const char *str, char c)
 {
 	int		i;
 	int		nb;
 	int		len;
 
+	if (!str || !c)
+		return (0);
 	i = 0;
 	nb = 0;
 	if (!str[i])
@@ -38,7 +40,7 @@ int		ft_number(const char *str, char c)
 	return (nb);
 }
 
-int		ft_strlensplit(const char *str, int i, int *len, char c)
+static int		ft_strlensplit(const char *str, int i, int *len, char c)
 {
 	while (str[i] == c)
 		i++;
@@ -47,7 +49,7 @@ int		ft_strlensplit(const char *str, int i, int *len, char c)
 	return (i);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		len;
 	int		j;

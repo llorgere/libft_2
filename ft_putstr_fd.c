@@ -6,7 +6,7 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/01 17:52:56 by llorgere          #+#    #+#             */
-/*   Updated: 2017/05/01 17:52:58 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 19:56:12 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char const *s, int fd)
 {
 	int		i;
 
+	if (!s || !fd)
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{

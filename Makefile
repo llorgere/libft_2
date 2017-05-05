@@ -6,7 +6,7 @@
 #    By: llorgere <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/12 14:11:34 by llorgere          #+#    #+#              #
-#    Updated: 2017/05/02 19:23:31 by llorgere         ###   ########.fr        #
+#    Updated: 2017/05/05 20:39:07 by llorgere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,15 +73,14 @@ SRC = ft_memset.c \
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Wextra -Werror
+.PHONY = all clean fclean re
 
 all : $(NAME)
 
-$(NAME) : function.o
+$(NAME) : 
+		$(CC) $(CFLAGS) $(SRC)
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
-
-function.o :
-		$(CC) $(CFLAGS) $(SRC)
 
 clean :
 		/bin/rm -rf $(OBJ)

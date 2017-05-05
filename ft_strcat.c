@@ -6,9 +6,11 @@
 /*   By: llorgere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 18:32:06 by llorgere          #+#    #+#             */
-/*   Updated: 2017/04/11 18:41:30 by llorgere         ###   ########.fr       */
+/*   Updated: 2017/05/05 16:16:54 by llorgere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcat(char *dest, const char *src)
 {
